@@ -24,7 +24,7 @@ $con->query($sql);
 
 $sql="select * from user";
 $data=$con->query($sql);
-$result=$data->fetch_all(MYSQLI_ASSOC);
+$result=$data->fetch_all(MYSQLI_ASSOC);//11/08
 foreach($result as $val){
 
 ?>
@@ -38,5 +38,6 @@ foreach($result as $val){
 <td><a href="http://localhost:81/delete.php?id=<?php echo $val['id']?>">delete</a></td>
 </tr>
 <?php } ?>
+
 
 	</table>
